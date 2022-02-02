@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+source $HOME/ArchTitus/setup.conf
+
 echo -ne "
 Automated Programming Software Installer Script
 Made By Monzim
@@ -27,7 +29,7 @@ Made By Monzim
 
 Installing Node Packages
 "
-source $HOME/ArchTitus/setup.conf
+
 
 addNodePackage () {
   cd ~
