@@ -1,1 +1,11 @@
-
+zoom
+brave-bin
+google-chrome
+colorpicker
+networkmanager-dmenu-git
+polybar
+ttf-cascadia-code
+ulauncher
+betterlockscreen
+tabby
+termite

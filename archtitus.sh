@@ -22,6 +22,7 @@ echo -ne "
     bash 0-preinstall.sh
     arch-chroot /mnt /root/ArchTitus/1-setup.sh
     arch-chroot /mnt /usr/bin/runuser -u $USERNAME -- /home/$USERNAME/ArchTitus/2-user.sh
+    arch-chroot /mnt /usr/bin/runuser -u $USERNAME -- /home/$USERNAME/ArchTitus/2-2-user-pp.sh
     arch-chroot /mnt /root/ArchTitus/3-post-setup.sh
 
 echo -ne "

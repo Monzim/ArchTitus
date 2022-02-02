@@ -42,7 +42,7 @@ export PATH=$PATH:~/.local/bin
 cp -r ~/ArchTitus/dotfiles/* ~/.config/
 echo -ne "
 -------------------------------------------------------------------------
-                    SYSTEM READY FOR 3-post-setup.sh
+                    SYSTEM READY FOR 2-2-user-setup.sh
 -------------------------------------------------------------------------
 "
 exit
