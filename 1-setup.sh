@@ -158,14 +158,18 @@ echo -ne "
 if [ $(whoami) = "root"  ]; then
     groupadd libvirt
     useradd -m -G wheel,libvirt -s /bin/bash $USERNAME 
-    usermod -aG wheel $USERNAME
+    echo "$USERNAME created, home directory created, added to wheel and libvirt group, default shell set to /bin/bash"
 
 # use chpasswd to enter $USERNAME:$password
     echo "$USERNAME:$PASSWORD" | chpasswd
-	cp -R /root/ArchTitus /home/$USERNAME/
+    echo "$USERNAME password set"
+
+	cp -R $HOME/ArchTitus /home/$USERNAME/
     chown -R $USERNAME: /home/$USERNAME/ArchTitus
-# enter $nameofmachine to /etc/hostname
-	echo $nameofmachine > /etc/hostname
+    echo "ArchTitus copied to home directory"
+
+# enter $NAME_OF_MACHINE to /etc/hostname
+	echo $NAME_OF_MACHINE > /etc/hostname
 else
 	echo "You are already a user proceed with aur installs"
 fi
