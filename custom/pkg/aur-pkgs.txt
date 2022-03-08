@@ -1,0 +1,5 @@
+google-chrome
+colorpicker
+networkmanager-dmenu-git
+polybar
+ttf-cascadia-code
